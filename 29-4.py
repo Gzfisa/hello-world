@@ -9,14 +9,14 @@ def rep_word(file,old_word,new_word):
         eachline = eachline.replace(old_word,new_word)
         content.append(eachline)
     
-    decide = input("%s has appeared %s times, will u replace it by %s" %(old_word,count,new_word))
+    decide = input("%s has appeared %s times, will u replace it by %s,Yes or No?" %(old_word,count,new_word))
     
     if decide == 'Yes':
         f = open(file,"w")
-        f.writeline(content)
+        f.writelines(content)
         f.close()
     
-file = input('pls input the file name')
+file = "C:\\Users\\Administrator\\Desktop\\bbb.txt"
 old_word = input('pls input the word u want to replace')
 new_word = input('pls input the word u want to replaced by')
     
