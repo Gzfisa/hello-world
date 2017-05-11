@@ -15,3 +15,7 @@ def findstr(s,S):
 findstr('12','12365412789')
             
         
+    
+ 
+#返回结果是2times
+        
